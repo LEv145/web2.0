@@ -3,65 +3,75 @@
 <html lang="ru">
 <head>
 	<title>MoGo</title>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/small_screens.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/small_screens.css"> -->
 </head>
-<body>
-
-	<header class="header">
-		<div class="container">
-			<div class="header__content">
-				<div class="header__logo">
+<body class="font-montserrat text-soft-black te">
+	<header class="fixed z-10 w-full bg-black">
+		<div class="max-w-[1200px] my-0 mx-auto overflow-hidden h-full">
+			<div class="flex justify-between flex-wrap">
+				<div class="text-[30px] text-white font-bold">
 					<p>MoGo</p>
 				</div>
-				<nav class="header__nav">
-					<a class="header__nav_item" href="#">About</a>
-					<a class="header__nav_item" href="#">Service</a>
-					<a class="header__nav_item" href="#">Blog</a>
-					<a class="header__nav_item" href="#">Work</a>
-					<a class="header__nav_item" href="#">Contact</a>
+				<nav class="flex flex-wrap items-end justify-evenly w-[400px]">
+					<a class="mb-[4px] relative text-[14px] font-bold text-white uppercase no-underline transition duration-200 ease-linear hover:text-soft-gold hover:after:bg-soft-gold after:block after:absolute after:top-full after:bg-white after:h-[2px] after:w-full" href="#">About</a>
+					<a class="mb-[4px] relative text-[14px] font-bold text-white uppercase no-underline transition duration-200 ease-linear hover:text-soft-gold hover:after:bg-soft-gold after:block after:absolute after:top-full after:bg-white after:h-[2px] after:w-full" href="#">Service</a>
+					<a class="mb-[4px] relative text-[14px] font-bold text-white uppercase no-underline transition duration-200 ease-linear hover:text-soft-gold hover:after:bg-soft-gold after:block after:absolute after:top-full after:bg-white after:h-[2px] after:w-full" href="#">Blog</a>
+					<a class="mb-[4px] relative text-[14px] font-bold text-white uppercase no-underline transition duration-200 ease-linear hover:text-soft-gold hover:after:bg-soft-gold after:block after:absolute after:top-full after:bg-white after:h-[2px] after:w-full" href="#">Work</a>
+					<a class="mb-[4px] relative text-[14px] font-bold text-white uppercase no-underline transition duration-200 ease-linear hover:text-soft-gold hover:after:bg-soft-gold after:block after:absolute after:top-full after:bg-white after:h-[2px] after:w-full" href="#">Contact</a>
 				</nav>
 			</div>
 		</div>
 	</header>
 
-	<div class="intro">
-		<div class="container">
-			<div class="intro__pre_title">
+	<div class="min-h-[1000px] bg-[url(./assets/images/intro.png)] bg-left-top bg-cover bg-no-repeat">
+		<div class="max-w-[1200px] my-0 mx-auto overflow-hidden h-ful">
+			<div class="mt-[175px] grid justify-items-center text-[30.5px] 2xl:text-[75px] font-kaushan-script text-white">
 				<p>Creative template</p>
 			</div>
-			<div class="intro__title">
+			<div class="mt-[20px] grid justify-items-center relative text-[61px] 2xl:text-[150px] font-bold text-white uppercase text-center after:mt-[70px] after:block after:absolute after:top-full after:bg-white after:h-[2px] after:w-[60px]">
 				<p>Welcome to MoGo</p>
 			</div>
-			<div class="intro__button">
+			<div class="mt-[120px] grid justify-items-center">
 				<a href="#">
-					<button class="intro__button_object">Learn More</button>
+					<button class="font-[14px] font-bold text-white uppercase border-[4px] border-solid border-white px-[30px] py-[13px] bg-transparent transition-colors ease-linear duration-200 hover:text-black hover:border-black">Learn More</button>
 				</a>
 			</div>
-			<div class="intro__progress_menu">
-				<div class="intro__progress_menu_item">
-					<progress class="intro__progress_menu_item_progress" value="20" max="100"></progress>
-					<div class="intro__progress_menu_item_title"><p>01 Intro</p></div>
+			<div class="mt-[35px] flex justify-center flex-wrap">
+				<div>
+					<div class="h-[2px] w-[275px] bg-white">
+						<div class="bg-gentle-red h-full" style="width: 20%"></div>
+					</div>
+					<div class="mt-[30px] font-[20px] font-bold uppercase"><p>01 Intro</p></div>
+				</div>
+				<div>
+					<div class="h-[2px] w-[275px] bg-white">
+						<div class="bg-gentle-red h-full" style="width: 0%"></div>
+					</div>
+					<div class="mt-[30px] font-[20px] font-bold uppercase"><p>02 Work</p></div>
+				</div>
+				<div>
+					<div class="h-[2px] w-[275px] bg-white">
+						<div class="bg-gentle-red h-full" style="width: 0%"></div>
+					</div>
+					<div class="mt-[30px] font-[20px] font-bold uppercase"><p>03 About</p></div>
 				</div>
 				<div class="intro__progress_menu_item">
-					<progress class="intro__progress_menu_item_progress" value="0" max="100"></progress>
-					<div class="intro__progress_menu_item_title"><p>02 Work</p></div>
-				</div>
-				<div class="intro__progress_menu_item">
-					<progress class="intro__progress_menu_item_progress" value="0" max="100"></progress>
-					<div class="intro__progress_menu_item_title"><p>03 About</p></div>
-				</div>
-				<div class="intro__progress_menu_item">
-					<progress class="intro__progress_menu_item_progress" value="0" max="100"></progress>
-					<div class="intro__progress_menu_item_title"><p>04 Contacts</p></div>
+					<div class="h-[2px] w-[275px] bg-white">
+						<div class="bg-gentle-red h-full" style="width: 0%"></div>
+					</div>
+					<div class="mt-[30px] font-[20px] font-bold uppercase"><p>04 Contacts</p></div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="about_us">
-		<div class="container">
+		<div class="max-w-[1200px] my-0 mx-auto overflow-hidden h-ful">
 			<div class="about_us__title">
 				<p>What we do</p>
 			</div>
@@ -79,7 +89,7 @@
 		</div>
 	</div>
 	<div class="statistic">
-		<div class="container">
+		<div class="max-w-[1200px] my-0 mx-auto overflow-hidden h-ful">
 			<div class="statistic__content">
 				<div class="statistic__block">
 					<div class="statistic__block_number">
@@ -125,7 +135,7 @@
 		</div>
 	</div>
 	<div class="images_grid">
-		<div class="container">
+		<div class="max-w-[1200px] my-0 mx-auto overflow-hidden h-ful">
 			<div class="images_grid__content">
 				<img class="images_grid__image" alt="Image 1" src="./assets/images/images_grid__image_1.png">
 				<img class="images_grid__image" alt="Image 2" src="./assets/images/images_grid__image_2.png">
@@ -138,7 +148,7 @@
 		</div>
 	</div>
 	<footer class="footer">
-		<div class="container">
+		<div class="max-w-[1200px] my-0 mx-auto overflow-hidden h-ful">
 			<div class="footer__content">
 				<div class="footer__blocks">
 					<div class="footer__block">
