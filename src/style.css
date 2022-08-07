@@ -613,10 +613,6 @@ video {
   height: 2px;
 }
 
-.h-1 {
-  height: 0.25rem;
-}
-
 .min-h-\[1000px\] {
   min-height: 1000px;
 }
@@ -661,18 +657,6 @@ video {
   justify-items: center;
 }
 
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -699,23 +683,13 @@ video {
   background-color: transparent;
 }
 
-.bg-gentle-red {
-  background-color: hsl(0, 83%, 73%);;
-}
-
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
-.bg-blue-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-gentle-red {
+  background-color: hsl(0, 83%, 73%);;
 }
 
 .bg-\[url\(\.\/assets\/images\/intro\.png\)\] {
